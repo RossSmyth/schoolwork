@@ -4,9 +4,9 @@ Repo of all MATLAB-based schoolwork I have done. Doens't include some stuff such
 ## Structure
 Should follow something roughly like this:
 
-|-- course
-|   |-- Project
-|   |   |-- script.m
+|-- course  
+|   |-- Project  
+|   |   |-- script.m  
 |   |   |-- report.pdf
 
 ## Contents
