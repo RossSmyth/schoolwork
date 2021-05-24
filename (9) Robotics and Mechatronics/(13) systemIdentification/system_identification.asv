@@ -1,0 +1,19 @@
+clc, clear, close all
+
+[time6, ~, angle6, voltage6] = readvars("high_freq_6v.txt");
+[time1, ~, angle1, voltage1] = readvars("high_freq_1v.txt");
+[time3, ~, angle3, voltage3] = readvars("high_freq_3v.txt");
+
+
+time6 = time6 - time6(1);
+time6 = time2num(time6);
+
+time1 = time1 - time1(1);
+time1 = time2num(time1);
+
+time3 = time3 - time3(1);
+time3 = time2num(time3);
+
+data6Volt = iddata(angle6, voltage6, [], 'SamplingInstants', time6);
+data6Volt = iddata(angle1, voltage1, [], 'SamplingInstants', time1);
+data6Volt = iddata(angle, voltage3, [], 'SamplingInstants', time3);
